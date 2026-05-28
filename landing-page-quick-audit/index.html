@@ -24,7 +24,10 @@
     .item p { margin: 0; color: var(--muted); font-size: 14px; }
     .box { margin-top: 24px; background: var(--paper); border: 1px solid var(--line); border-radius: 8px; padding: 16px; max-width: 720px; }
     .box p { margin: 0 0 8px; }
-    @media (max-width: 780px) { .band { grid-template-columns: 1fr; } h1 { font-size: 44px; } }
+    .sample { border-top: 1px solid var(--line); margin-top: 28px; padding-top: 28px; display: grid; grid-template-columns: minmax(0,.8fr) minmax(320px,1.2fr); gap: 18px; align-items: start; }
+    .sample h2 { margin: 0 0 10px; font-size: 28px; letter-spacing: 0; }
+    .sample pre { margin: 0; white-space: pre-wrap; background: #fff; border: 1px solid var(--line); border-radius: 8px; padding: 16px; font-size: 12px; max-height: 360px; overflow: auto; }
+    @media (max-width: 780px) { .band, .sample { grid-template-columns: 1fr; } h1 { font-size: 44px; } }
   </style>
 </head>
 <body>
@@ -37,7 +40,7 @@
       <div class="actions">
         <a class="btn" href="https://paypal.me/Locpiam/5USD">Buy for $5 USD</a>
       </div>
-      <p class="small">PayPal opens with $5 USD requested. After payment, the ZIP is delivered manually.</p>
+      <p class="small">PayPal opens with $5 USD requested. Add your delivery email or page URL in the PayPal note. After payment, the ZIP is delivered manually.</p>
       <div class="box">
         <p><strong>Delivery:</strong> after payment, send the PayPal confirmation and the ZIP will be delivered.</p>
         <p><strong>Included:</strong> standalone HTML audit app, 25-point scorecard, report generator, sample report, CTA copy bank, hero rewrite swipefile, and service delivery script.</p>
@@ -48,6 +51,30 @@
       <article class="item"><strong>25-point audit app</strong><p>Score message, offer, trust, friction, and clarity in a standalone HTML app.</p></article>
       <article class="item"><strong>Client-ready report</strong><p>Generate a concise report with top priorities, section scores, and next steps.</p></article>
       <article class="item"><strong>Service templates</strong><p>Includes delivery scripts, CTA copy examples, hero rewrite formulas, and sample output.</p></article>
+    </section>
+    <section class="sample" aria-label="Sample output">
+      <div><h2>Sample output</h2><p class="lead">The kit turns a rough review into a structured report with a score, top priorities, and practical fixes.</p></div>
+      <pre>Landing Page Quick Audit
+
+Page: TinyCRM
+Primary goal: Start free trial
+Audience: Solo consultants who need a lighter CRM
+
+Overall score: 52/100
+Verdict: Needs tightening
+
+Top priorities:
+1. Trust (40%)
+   - Testimonials need a name, role, company, or specific result.
+   Recommended fix: Move the most specific testimonial above the first secondary section.
+
+2. Friction (40%)
+   - Navigation competes with conversion.
+   Recommended fix: Repeat the primary CTA after proof and pricing blocks.
+
+3. Offer (60%)
+   - Pricing, trial, or next step has ambiguity.
+   Recommended fix: Add a one-sentence next-step note under the primary CTA.</pre>
     </section>
   </main>
 </body>
